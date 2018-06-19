@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "ru.iisuslik.tester";
+option java_outer_classname = "TesterProto";
+
+message TestRequest {
+    repeated int32 array = 1;
+    int32 size = 2;
+}
+
+
+message TestResponse {
+    repeated int32 array = 1;
+    int32 size = 2;
+    int64 sortTime = 3;
+    int64 allTime = 4;
+}
+
